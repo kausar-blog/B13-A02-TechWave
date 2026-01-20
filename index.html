@@ -31,15 +31,27 @@
             ><img src="./assets/logo-nav.png" alt="logo-nav"
           /></a>
           <!-- Menu Items -->
-          <ul class="hidden sm:flex items-center gap-8 text-sm">
-            <li><a href="#about">About</a></li>
-            <li><a href="#episodes">Episodes</a></li>
-            <li><a href="#host">Host</a></li>
+          <ul class="hidden sm:flex justify-center gap-8">
+            <li>
+              <a href="#about" class="hover:text-[#00ff88] transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#episodes" class="hover:text-[#00ff88] transition-colors"
+                >Episodes</a
+              >
+            </li>
+            <li>
+              <a href="#host" class="hover:text-[#00ff88] transition-colors"
+                >Host</a
+              >
+            </li>
           </ul>
           <!-- Subscribe button -->
           <a
             href="#"
-            class="hidden sm:inline-block items-center gap-2 px-5 py-2 custom-circle"
+            class="hidden sm:inline-block items-center gap-2 px-5 py-2 custom-circle transition-all duration-300 hover:scale-105"
             >Subscribe <i class="fa-solid fa-arrow-right"></i
           ></a>
 
@@ -62,9 +74,9 @@
         class="relative bg-[url('./assets/hero-bg.png')] bg-cover bg-no-repeat bg-center"
       >
         <div
-          class="max-w-6xl mx-auto items-center flex justify-center px-4 py-24 text-center flex-col"
+          class="max-w-6xl mx-auto items-center flex justify-center px-4 pt-24 pb-16 text-center flex-col"
         >
-          <!-- circle -->
+          <!-- podcast circle -->
           <div
             class="relative mb-8 w-48 h-48 md:w-56 md:h-56 flex items-center justify-center"
           >
@@ -79,26 +91,28 @@
               class="relative w-20 md:w-24"
             />
             <span
-              class="absolute top-3 right-2 bg-green-500 text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse"
+              class="absolute top-3 right-2 bg-[#00ff88] text-[#1a0b2e] text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse"
               >NEW</span
             >
           </div>
           <!-- content -->
           <h1 class="text-5xl md:text-7xl font-extrabold mb-4">TechWave</h1>
-          <p class="mb-4 text-gray-300">
+          <p class="mb-6 text-gray-300 max-w-xl">
             Your daily dose of tech insights, productivity hacks, and personal
             growth.
           </p>
-          <div class="flex flex-wrap gap-8">
-            <a href="#" class="flex gap-3 items-center px-5 py-3 custom-circle"
+          <!-- CTA Button-->
+          <div class="flex flex-wrap gap-8 justify-center">
+            <a
+              href="#"
+              class="flex gap-3 items-center px-5 py-3 custom-circle transition-all duration-300 hover:scale-105"
               ><img src="./assets/spotify.png" alt="spotify" /> Listen On
               Spotify</a
             >
             <a
               href="#"
-              class="flex gap-3 items-center px-4 py-3 text-[#00ff88] border rounded-full border-[#00ff88]"
-              ><img src="./assets/spotify.png" alt="spotify" /> Listen On
-              Spotify</a
+              class="flex gap-3 items-center px-4 py-3 text-[#00ff88] border rounded-full border-[#00ff88] transition-all duration-300 hover:bg-[#00ff88] hover:text-[#1a0b2e] hover:scale-105"
+              ><img src="./assets/message.png" alt="message" /> Subscribe</a
             >
           </div>
         </div>
@@ -127,8 +141,8 @@
           their day with TechWave.
         </p>
       </div>
-      <hr class="max-w-4xl mx-auto text-gray-700 my-8" />
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mx-auto max-w-4xl">
+      <hr class="max-w-4xl mx-auto text-gray-700 my-14" />
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mx-auto max-w-6xl">
         <div class="flex flex-col justify-center items-center gap-3">
           <h2 class="text-[#00ff88] font-bold text-5xl">150K+</h2>
           <p class="text-white/80 uppercase">Monthly Listeners</p>
@@ -158,7 +172,7 @@
       </h2>
       <!-- card -->
       <div
-        class="mx-auto max-w-4xl grid grid-cols-1 grid-rows-1 gap-5 sm:grid-cols-6 sm:grid-rows-6 py-5"
+        class="mx-auto max-w-6xl grid grid-cols-1 grid-rows-1 gap-5 sm:grid-cols-6 sm:grid-rows-6 py-5"
       >
         <!-- card 1 -->
         <div
@@ -231,121 +245,95 @@
       <!-- Cards wrapper -->
       <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         <!-- card 1 -->
-        <div class="bg-[#2a0a4a] rounded-2xl shadow-2xl flex flex-col p-4">
-          <div class="relative rounded-2xl overflow-hidden">
-            <img
-              src="./assets/episodes-youtube.png"
-              alt="episodes-youtube"
-              class="w-full h-[240px] object-cover"
-            />
-
-            <!-- youtube video link -->
-
-            <a
-              href="https://youtu.be/6979LIQmQso?si=7EzwuRtxJ-Lpo-3u"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center"
+        <div class="bg-[#2a0a4a] rounded-2xl shadow-2xl overflow-hidden">
+          <!-- video -->
+          <div class="relative w-full aspect-video">
+            <iframe
+              class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/TahmbZi1EiI?si=7jQidmR4_TDA1ffP"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
             >
-              <div class="">
-                <img src="./assets/epi-circle.png" alt="epi-circle" class="" />
-              </div>
-            </a>
+            </iframe>
           </div>
           <!-- Content -->
 
-          <div class="px-x pt-5">
-            <h3 class="text-2xl md:text-2xl font-bold mb-4">
-              The Future of AI in Everyday Life
+          <div class="p-5">
+            <h3 class="text-xl md:text-2xl font-bold mb-4">
+              Success Guide for Future Diploma Engineers
             </h3>
 
             <p class="text-gray-300 mb-4">
-              Exploring how artificial intelligence is transforming our daily
-              routines and what to expect in the next decade.
+              Start your career early as a skilled engineer. Explore job
+              opportunities in government and private sectors right after SSC.
             </p>
-            <h4 class="flex items-center gap-2 text-[#00ff8a]">
-              <img src="./assets/clock.png" alt="clock" /> 42 min
-            </h4>
+            <div class="flex items-center gap-2 text-[#00ff8a] font-medium">
+              <img src="./assets/clock.png" alt="clock" class="w-4 h-4" /> 5 min
+            </div>
           </div>
-
-          <!--  -->
         </div>
-        <!-- card 1 -->
-        <div class="bg-[#2a0a4a] rounded-2xl shadow-2xl flex flex-col p-4">
-          <div class="relative rounded-2xl overflow-hidden">
-            <img
-              src="./assets/episodes-youtube.png"
-              alt="episodes-youtube"
-              class="w-full h-[240px] object-cover"
-            />
-
-            <!-- youtube video link -->
-
-            <a
-              href="https://youtu.be/6979LIQmQso?si=7EzwuRtxJ-Lpo-3u"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center"
+        <!-- card 2 -->
+        <div class="bg-[#2a0a4a] rounded-2xl shadow-2xl overflow-hidden">
+          <!-- video -->
+          <div class="relative w-full aspect-video">
+            <iframe
+              class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/MPXXmeW7dHI?si=RCdGu868VCmfn63W"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
             >
-              <div class="">
-                <img src="./assets/epi-circle.png" alt="epi-circle" class="" />
-              </div>
-            </a>
+            </iframe>
           </div>
           <!-- Content -->
 
-          <div class="px-x pt-5">
-            <h3 class="text-2xl md:text-2xl font-bold mb-4">
-              The Future of AI in Everyday Life
+          <div class="p-5">
+            <h3 class="text-xl md:text-2xl font-bold mb-4">
+              PUBG Addict to Software Engineer!
             </h3>
 
             <p class="text-gray-300 mb-4">
-              Exploring how artificial intelligence is transforming our daily
-              routines and what to expect in the next decade.
+              Coding on just 2 hours of sleep! Learn how Fazlul Alam balanced a
+              full-time job and intense deadlines to transform his career.
             </p>
-            <h4 class="flex items-center gap-2 text-[#00ff8a]">
-              <img src="./assets/clock.png" alt="clock" /> 42 min
-            </h4>
+            <div class="flex items-center gap-2 text-[#00ff8a] font-medium">
+              <img src="./assets/clock.png" alt="clock" class="w-4 h-4" /> 66
+              min
+            </div>
           </div>
-
-          <!--  -->
         </div>
-        <!-- card 1 -->
-        <div class="bg-[#2a0a4a] rounded-2xl shadow-2xl flex flex-col p-4">
-          <div class="relative rounded-2xl overflow-hidden">
-            <img
-              src="./assets/episodes-youtube.png"
-              alt="episodes-youtube"
-              class="w-full h-[240px] object-cover"
-            />
-
-            <!-- youtube video link -->
-
-            <a
-              href="https://youtu.be/6979LIQmQso?si=7EzwuRtxJ-Lpo-3u"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center"
+        <!-- card 3 -->
+        <div class="bg-[#2a0a4a] rounded-2xl shadow-2xl overflow-hidden">
+          <!-- video -->
+          <div class="relative w-full aspect-video">
+            <iframe
+              class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/JEAYNvLs5nQ?si=zRXv1sFfDV0WCJSe"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
             >
-              <div class="">
-                <img src="./assets/epi-circle.png" alt="epi-circle" class="" />
-              </div>
-            </a>
+            </iframe>
           </div>
           <!-- Content -->
-
-          <div class="px-x pt-5">
-            <h3 class="text-2xl md:text-2xl font-bold mb-4">
-              The Future of AI in Everyday Life
+          <div class="p-5">
+            <h3 class="text-xl md:text-2xl font-bold mb-4">
+              Family wanted BCS, but I became a Developer!
             </h3>
 
             <p class="text-gray-300 mb-4">
-              Exploring how artificial intelligence is transforming our daily
-              routines and what to expect in the next decade.
+              From Bangla Literature to Web Dev—how Fahim overcame family
+              pressure and a non-CSE background to land his dream job.
             </p>
-            <h4 class="flex items-center gap-2 text-[#00ff8a]">
-              <img src="./assets/clock.png" alt="clock" /> 42 min
-            </h4>
+            <div class="flex items-center gap-2 text-[#00ff8a] font-medium">
+              <img src="./assets/clock.png" alt="clock" class="w-4 h-4" /> 43
+              min
+            </div>
           </div>
-
-          <!--  -->
         </div>
       </div>
     </section>
@@ -360,64 +348,59 @@
           Meet The Host
         </h2>
         <div
-          class="max-w-4xl mx-auto grid sm:grid-cols-4 gap-8 items-center shadow-2xl rounded-4xl bg-[#2a0f4d] p-10"
+          class="grid grid-cols-1 sm:grid-cols-4 gap-8 items-center shadow-2xl rounded-4xl bg-[#2a0f4d] p-10"
         >
-          <div class="ms:col-span-1 flex justify-center max-w-full max-h-full">
+          <!-- Host Img -->
+          <div class="sm:col-span-1 flex justify-center">
             <img
               src="./assets/host.png"
               alt="Alex Kumar"
-              class="max-w-full max-h-full object-cover"
+              class="w-full max-w-[240px] shadow-lg rounded-2xl object-cover"
             />
           </div>
+          <!-- Content Host -->
           <div class="sm:col-span-3 text-center sm:text-left">
             <h3 class="text-2xl md:text-3xl font-bold mb-4">Alex Kumar</h3>
-            <p class="mb-4">
+            <p class="mb-6 text-white/80">
               Tech entrepreneur, productivity expert, and lifelong learner. Alex
               has been in the tech industry for over 10 years, working with
               startups and Fortune 500 companies. Through TechWave, Alex shares
               insights from industry leaders and practical advice for anyone
               looking to grow in tech.
             </p>
+            <!-- Social Icons -->
             <div class="flex gap-4 justify-center sm:justify-start">
               <a
                 href="#"
-                class="border-2 border-gray-600 p-3 rounded-full flex items-center transition-all duration-300 ease-in-out hover:bg-gray-600 hover:scale-110 group"
+                class="border-2 border-gray-600 p-3 rounded-full transition-all duration-300 hover:bg-gray-600 hover:scale-110"
               >
                 <img
                   src="./assets/linkedin.png"
                   alt="linkedin"
-                  class="w-5 h-5 object-cover transition-all duration-300 group-hover:invalid:"
+                  class="w-5 h-5"
                 />
               </a>
               <a
                 href="#"
-                class="border-2 border-gray-600 p-3 rounded-full flex items-center transition-all duration-300 ease-in-out hover:bg-gray-600 hover:scale-110 group"
+                class="border-2 border-gray-600 p-3 rounded-full transition-all duration-300 hover:bg-gray-600 hover:scale-110"
               >
-                <img
-                  src="./assets/x.png"
-                  alt="x-app"
-                  class="w-5 h-5 object-cover transition-all duration-300 group-hover:invalid:"
-                />
+                <img src="./assets/x.png" alt="x-app" class="w-5 h-5" />
               </a>
               <a
                 href="#"
-                class="border-2 border-gray-600 p-3 rounded-full flex items-center transition-all duration-300 ease-in-out hover:bg-gray-600 hover:scale-110 group"
+                class="border-2 border-gray-600 p-3 rounded-full transition-all duration-300 hover:bg-gray-600 hover:scale-110"
               >
                 <img
                   src="./assets/instagram.png"
                   alt="instagram"
-                  class="w-5 h-5 object-cover transition-all duration-300 group-hover:invalid:"
+                  class="w-5 h-5"
                 />
               </a>
               <a
                 href="#"
-                class="border-2 border-gray-600 p-3 rounded-full flex items-center transition-all duration-300 ease-in-out hover:bg-gray-600 hover:scale-110 group"
+                class="border-2 border-gray-600 p-3 rounded-full transition-all duration-300 hover:bg-gray-600 hover:scale-110"
               >
-                <img
-                  src="./assets/youtube.png"
-                  alt="youtube"
-                  class="w-5 h-5 object-cover transition-all duration-300 group-hover:invalid:"
-                />
+                <img src="./assets/youtube.png" alt="youtube" class="w-5 h-5" />
               </a>
             </div>
           </div>
